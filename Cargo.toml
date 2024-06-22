@@ -1,15 +1,15 @@
 [package]
-name = "rust_starter"
+name = "personal_ledger_tui"
 authors = ["Ian Teda <ian@teda.id.au>"]
 version = "0.1.0"
 edition = "2021"
-description = "A Rust starter repository"
+description = "Personal Ledger text user interface"
 documentation = "https://ianteda.github.io/personal_ledger/"
 homepage = "https://github.com/IanTeda/rust_starter"
 repository = "https://github.com/IanTeda/rust_starter"
 readme = "README.md"
 license-file = "LICENSE.txt"
-keywords = ["rust", "starter", "boilerplate"]
+keywords = ["rust", "ledger", "finanice", "tui"]
 
 [lib]
 path = "src/lib.rs"
@@ -19,6 +19,8 @@ name = "rust_starter"
 path = "src/main.rs"
 
 [dependencies]
+crossterm = "0.27.0"
+ratatui = "0.26.3"
 thiserror = "1"
 tokio = { version = "1", features = ["full"] }
 
